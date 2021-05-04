@@ -42,6 +42,7 @@ predictions = logmodel.predict(X_test)
 
 print(classification_report(Y_test,predictions))
 print(confusion_matrix(Y_test,predictions))
+print(logmodel.score(X_test,Y_test))
 
 
 

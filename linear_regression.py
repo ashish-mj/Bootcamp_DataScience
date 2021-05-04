@@ -38,6 +38,8 @@ sns.distplot((Y_test-prediction))
 print(metrics.mean_absolute_error(Y_test, prediction))   #mae
 print(metrics.mean_squared_error(Y_test, prediction))    #mse
 print(np.sqrt(metrics.mean_squared_error(Y_test, prediction)))  #rmse
+print("---------")
+print(lm.score(X_test,Y_test))
 
 
 
